@@ -20,17 +20,7 @@ define( 'WP_CACHE', false );
  */
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp-test' );
-/** Database username */
-define( 'DB_USER', 'root' );
-/** Database password */
-define( 'DB_PASSWORD', '' );
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -79,3 +69,49 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+switch(wp_get_environment_type()) {
+	case "development":
+		define( 'DB_NAME', 'wp-test' );
+		/** Database username */
+		define( 'DB_USER', 'root' );
+		/** Database password */
+		define( 'DB_PASSWORD', '' );
+		/** Database hostname */
+		define( 'DB_HOST', 'localhost' );
+		/** Database charset to use in creating database tables. */
+		define( 'DB_CHARSET', 'utf8' );
+		/** The database collate type. Don't change this if in doubt. */
+		define( 'DB_COLLATE', '' );
+		break;
+	case "staging":
+		define( 'DB_NAME', 'dxsfwwdmfz' );
+		/** Database username */
+		define( 'DB_USER', 'root' );
+		/** Database password */
+		define( 'DB_PASSWORD', 'z5Yb652QYc' );
+		/** Database hostname */
+		define( 'DB_HOST', 'localhost' );
+		/** Database charset to use in creating database tables. */
+		define( 'DB_CHARSET', 'utf8' );
+		/** The database collate type. Don't change this if in doubt. */
+		define( 'DB_COLLATE', '' );
+		break;
+	default:
+			define( 'DB_NAME', 'wp-test' );
+		/** Database username */
+		define( 'DB_USER', 'root' );
+		/** Database password */
+		define( 'DB_PASSWORD', '' );
+		/** Database hostname */
+		define( 'DB_HOST', 'localhost' );
+		/** Database charset to use in creating database tables. */
+		define( 'DB_CHARSET', 'utf8' );
+		/** The database collate type. Don't change this if in doubt. */
+		define( 'DB_COLLATE', '' );
+	}
+
+
+
+define( 'WP_ENVIRONMENT_TYPE', 'staging' );
