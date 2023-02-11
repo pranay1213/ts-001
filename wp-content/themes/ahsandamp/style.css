@@ -1,0 +1,7177 @@
+/*!
+Theme Name: ahsandamp
+Theme URI: https://them.es/starter
+Author: them.es
+Author URI: https://them.es/
+Description: 
+Version: 3.3.2
+Requires at least: 5.0
+Tested up to: 6.1
+Requires PHP: 7.2
+License: GPL version 2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0
+Tags: custom-background, custom-colors, featured-images, flexible-header, microformats, post-formats, rtl-language-support, theme-options, translation-ready, accessibility-ready
+Text Domain: ahsandamp
+*/
+
+/* Don't overwrite this file. Compile "/assets/main.scss" to "/assets/dist/main.css" */
+
+
+/* From http://codex.wordpress.org/CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* MK  */
+.right-image-one {
+    margin-right: 42px;
+    margin-left: 42.5px;
+}
+
+.right-image-two {
+    margin-left: 42px;
+}
+
+section.logo-section.mobile-none .container {
+    max-width: 1381px;
+}
+
+.logo-1 a {
+    padding-right: 46.5px !important;
+}
+
+.logo-2 a {
+    padding-left: 46.5px !important;
+    padding-right: 63px !important;
+}
+
+.scroll-block {
+    padding-left: 46.5px !important;
+    padding-right: 107px !important;
+}
+
+.logo-3 a {
+    padding-right: 126px;
+}
+
+@media screen and (min-width: 1921px) {
+    .alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    .aligncenter,
+    div.aligncenter {
+        display: block;
+        margin: 5px auto 5px auto;
+    }
+
+    .alignright {
+        float: right;
+        margin: 5px 0 20px 20px;
+    }
+
+    .alignleft {
+        float: left;
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.alignright {
+        float: right;
+        margin: 5px 0 20px 20px;
+    }
+
+    a img.alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.alignleft {
+        float: left;
+        margin: 5px 20px 20px 0;
+    }
+
+    a img.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .wp-caption {
+        max-width: 96%;
+        /* Image does not overflow the content area */
+        padding: 5px 3px 10px;
+        text-align: center;
+    }
+
+    .wp-caption.alignnone {
+        margin: 5px 20px 20px 0;
+    }
+
+    .wp-caption.alignleft {
+        margin: 5px 20px 20px 0;
+    }
+
+    .wp-caption.alignright {
+        margin: 5px 0 20px 20px;
+    }
+
+    .wp-caption img {
+        border: 0 none;
+        height: auto;
+        margin: 0;
+        max-width: 98.5%;
+        padding: 0;
+        width: auto;
+    }
+
+    .wp-caption p.wp-caption-text {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0;
+        padding: 0 4px 5px;
+    }
+
+    .gallery-item {
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .gallery-item a,
+    .gallery-item a:hover,
+    .gallery-item a:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: none;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .gallery-item a img {
+        display: block;
+        -webkit-transition: -webkit-filter 0.2s ease-in;
+        transition: -webkit-filter 0.2s ease-in;
+        transition: filter 0.2s ease-in;
+        transition: filter 0.2s ease-in, -webkit-filter 0.2s ease-in;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .gallery-item a:hover img,
+    .gallery-item a:focus img {
+        -webkit-filter: opacity(60%);
+        filter: opacity(60%);
+    }
+
+    .gallery-caption {
+        display: block;
+        text-align: left;
+        padding: 0 10px 0 0;
+        margin-bottom: 0;
+    }
+
+    .gallery-columns-1 .gallery-item {
+        max-width: 100%;
+    }
+
+    .gallery-columns-2 .gallery-item {
+        max-width: 50%;
+    }
+
+    .gallery-columns-3 .gallery-item {
+        max-width: 33%;
+    }
+
+    .gallery-columns-4 .gallery-item {
+        max-width: 25%;
+    }
+
+    .gallery-columns-5 .gallery-item {
+        max-width: 20%;
+    }
+
+    .gallery-columns-6 .gallery-item {
+        max-width: 16.66%;
+    }
+
+    .gallery-columns-7 .gallery-item {
+        max-width: 14.28%;
+    }
+
+    .gallery-columns-8 .gallery-item {
+        max-width: 12.5%;
+    }
+
+    .gallery-columns-9 .gallery-item {
+        max-width: 11.11%;
+    }
+
+    .gallery-columns-6 .gallery-caption,
+    .gallery-columns-7 .gallery-caption,
+    .gallery-columns-8 .gallery-caption,
+    .gallery-columns-9 .gallery-caption {
+        display: none;
+    }
+
+    .bypostauthor {
+        font-weight: bold;
+    }
+
+    p {
+        padding: 0px !important;
+    }
+
+    /* Text meant only for screen readers. */
+    .screen-reader-text {
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    .screen-reader-text:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar. */
+    }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1598px;
+    }
+
+    .contact-form-section .container {
+        max-width: 1208px;
+    }
+
+    /* 224 css */
+
+
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
+
+
+
+    .product-title-block h3 {
+        width: 1134px;
+    }
+
+    .contact-title-block p {
+        width: 905px;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+            font-family: 'poppins';
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #DF5928;
+        } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 39px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 140px;
+        line-height: 132px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/hero-bg-svg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        padding-top: 380.6px;
+        padding-bottom: 302.9px;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1677.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px 0px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/bg-third.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        padding: 350px 0;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 59% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 366px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1367px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 350px;
+        top: 53px;
+    }
+
+    /* .row.logo-text {
+    padding-top: 262.5px;
+    padding-bottom: 43.9px;
+} */
+    /* .banner-title.heacontent.text-center {
+    width: 100%;
+    max-width: 1367px;
+    padding-top: 224px;
+} */
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 19%;
+        margin-top: 20.6px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1920px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    .row {
+        --bs-gutter-x: 0px !important;
+    }
+    .footer-after-sec {
+    position: relative;
+    width: 100%;
+    max-width: 1767px;
+    margin: 0 auto;
+}
+    .footer-after-sec:before {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: absolute;
+        top: -74px;
+        left: 13%;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-size: 240px;
+        height: 50px;
+        color: #fff;
+    }
+    .footer-after-sec::after {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-size: 240px;
+        height: 50px;
+        color: #fff;
+    }
+    .scroll-block {
+        padding-left: 63.5px !important;
+        padding-right: 107px !important;
+    }
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-left-text-block {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .engg-section .container {
+        max-width: 1598px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        /* position: relative;
+        left: 116px; */
+    }
+
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 73%;
+        top: 329px;
+    }
+    
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    /* .row.logo-text .col-md-3 {
+        position: relative;
+        right:-120px;
+    } */
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -121px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png') no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1763px;
+        position: relative;
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 63%;
+        height: 100px;
+        margin-top: 38px;
+    }
+
+    /*     .row.logo-sec {
+        column-gap: 60px;
+    } */
+    /* .logo1 img {
+        padding-right: 95px;
+    } */
+    /* .row.logo-text {
+        padding-left: 103px;
+        margin-top: 262px;
+    } */
+    .row.banner-text-block {
+        padding-top: 224px;
+    }
+
+    /* .row.logo-text {
+        padding-left: 103px;
+    } */
+    section.hero-section .container {
+        max-width: 1598px !important;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 1460px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+
+    img.right-logo-two {
+        width: 100%;
+        max-width: 231px;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+        max-width: 452px;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    .product-title-block h3 {
+        width: 1134px;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    .contact-title-block p {
+        width: 905px;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+        margin-top: 21.7px;
+        margin-bottom: 41.7px;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 39px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    /* .banner-title h1 {
+                font-family: Poppins, sans-serif;
+                font-size: 51px;
+                line-height: 48px;
+                text-align: center;
+                color: rgb(223, 89, 40);
+                width: auto;
+            }  */
+
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        /* margin: 0 auto; */
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    /* nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        /* margin: 40px 60px;
+        padding: 36px 0px !important;
+    } */
+    nav.navbar.fixed-top .container {
+        border-bottom: 0.5px solid #fff;
+        padding: 0px;
+        max-width: 1763px !important;
+    }
+    nav.navbar.fixed-top ul.navbar-nav {
+        padding: 36px 0px;
+    }
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 140px;
+        line-height: 132px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+        margin-left: 88px;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 60% 100%;
+        background-size: cover;
+
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 295px;
+        top: 180px;
+    }
+
+    section.hero-section .banner-title.heacontent.text-center::after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 150px;
+    }
+    .hero-section .banner-title.heacontent .container  {
+        max-width: 1367px !important;
+    }
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        padding-top: 380.6px;
+        padding-bottom: 257.9px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 300px;
+        padding-bottom: 50px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* .engg-section .container {
+                padding: 350px 0;
+            } */
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 255.65px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    /* .hero-bg-block .container {
+        width: 100%;
+        max-width: 1367px;
+    } */
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 32px;
+        line-height: 38px;
+        color: #fff;
+        font-weight: 500;
+        /* width: 100%; */
+        position: absolute;
+        right: 10px;
+        top: 47px;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        margin: 0 103px;
+    }
+
+    /* .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    } */
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 360px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+/* @media screen and (max-width:1680px){
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        margin: 0px 103px;
+    }
+    section.engg-section:before {
+        content: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: relative;
+        left: 69%;
+        top: 312px;
+    }
+} */
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    /* .footer-sec-block:before {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: relative;
+        bottom: -250px;
+        left: 86%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 240px;
+        height: 50px;
+        color: #fff;
+    } */
+    .row.logo-sec section.logo-section {
+        margin: 0px !important;
+    }
+    nav.navbar.fixed-top .container {
+        border-bottom: 0.5px solid #fff;
+        padding: 0px;
+        max-width: 1440px !important;
+    }
+    nav.navbar.fixed-top ul.navbar-nav {
+        padding: 36px 0px;
+    }
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 5%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-left-text-block {
+        width: 100%;
+        max-width: 682px;
+        padding-left: 46px;
+    }
+
+    .logo-1 a {
+        padding-right: 46.5px !important;
+    }
+
+    .logo-2 a {
+        padding-left: 46.5px !important;
+        padding-right: 63px !important;
+    }
+
+    .scroll-block {
+        padding-left: 46.5px !important;
+        padding-right: 107px !important;
+    }
+
+    .logo-3 a {
+        padding-right: 126px;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 67%;
+        top: 256px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        /* position: relative;
+        left: 76px !important; */
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 139px;
+        top: 180px;
+    }
+
+    section.hero-section .banner-title.heacontent.text-center::after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -74px;
+    }
+
+    select.wpcf7-form-control {
+
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 65%;
+        height: 100px;
+        margin-top: 35px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    .product-title-block h3 {
+        width: 1134px;
+    }
+
+    .contact-title-block p {
+        width: 905px;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+            font-family: 'poppins';
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #DF5928;
+        } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #fff;
+        align-items: center;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 39px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    /* nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    } */
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 140px;
+        line-height: 132px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+        margin-left: 87px;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 60% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        padding-top: 290px;
+        padding-bottom: 250px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 203px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1367px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    /* span.banner-desc {
+        font-size: 32px;
+        line-height: 38px;
+        color: #fff;
+        position: absolute;
+        right: 35px;
+        top: 48px;
+        font-weight: 500;
+    } */
+    span.banner-desc {
+        font-size: 29px;
+        line-height: 38px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 95px;
+        top: 48px;
+        font-weight: 500;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        margin: 0 103px;
+
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1440px;
+        padding-top: 224px;
+        position: relative;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 200px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    .row.logo-sec section.logo-section {
+        margin: 0px !important;
+        --bs-gutter-x: 0px !important;
+    }
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+
+    .hero-left-text-block {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 5%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 72%;
+        top: 165px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        position: relative;
+        left: 78px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 139px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -74px;
+    }
+
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    select.wpcf7-form-control {
+
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 65%;
+        height: 100px;
+        margin-top: 35px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    /* .product-title-block h3 {
+        width: 1134px;
+    } */
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    .contact-title-block p {
+        width: 905px;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+            font-family: 'poppins';
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #DF5928;
+        } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        /* font-size: 26px; */
+        font-size: 23px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        /* line-height: 106px; */
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 39px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 100px;
+        line-height: 100px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+        margin-left: 68px;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 70% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 500px;
+        left: 117px;
+        top: 15px;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        padding: 220px 0;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 185px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1200px;
+    }
+    .row {
+        --bs-gutter-x: 0px !important;
+    }
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 25px;
+        line-height: 38px;
+        color: #fff;
+        font-weight: 500;
+        position: absolute;
+        right: 170px;
+        top: 20px;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 120px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 1326px) and (max-width: 1439px) {
+
+    /* .product-title-block h3 {
+            width: 1134px;
+        } */
+    /* .contact-title-block p {
+            width: 905px;
+        } */
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+    .logo-2 a {
+        padding-left: 38.5px !important;
+        padding-right: 63px !important;
+    }
+    .scroll-block {
+        padding-left: 20.5px !important;
+        padding-right: 107px !important;
+    }
+    .logo-3 a {
+        padding-right: 126px;
+    }
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 7%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 66%;
+        top: 160px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 100px;
+        top: 180px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -36px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 66%;
+        height: 100px;
+        margin-top: 38px;
+    }
+
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 270px;
+        top: 59px;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 31px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 100px;
+        line-height: 100px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        /* background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/hero-bg-svg.svg'); */
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 70% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 450px;
+        left: 151px;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    img.footrt-logo-two {
+        width: 35%;
+    }
+
+    img.footrt-logo-one {
+        width: 60%;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+       padding-top: 200px;
+       padding-bottom: 240px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 175px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1280px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 25px;
+        line-height: 38px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 200px;
+        top: 20px;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1200px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 128px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1325px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    .row {
+        --bs-gutter-x: 0px !important;
+    }
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+    .scroll-block {
+        padding-left: 90px !important;
+        padding-right: 107px !important;
+    }
+    .logo-1 a {
+        padding-right: 0px !important;
+    }
+    .logo-2 a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .logo-3 a {
+    padding-right: 12px;
+}
+.footer-after-sec {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+    .footer-after-sec:before {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: absolute;
+        top: -74px;
+        left: 5%;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-size: 240px;
+        height: 50px;
+        color: #fff;
+    }
+    .footer-after-sec::after {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-size: 240px;
+        height: 50px;
+        color: #fff;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 68%;
+        top: 141px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 57px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -36px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 67%;
+        height: 100px;
+        margin-top: 36px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    .footer-img-block img {
+        width: 100%;
+        max-width: 40%;
+    }
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 41px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 31px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 100px;
+        line-height: 110px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 93.4px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 500px;
+        top: 10px;
+        left: 99px;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        padding: 200px 0;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 170px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 325px;
+        top: 35px;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 86px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+    .right-image-one {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    .right-image-one {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+    .logo-1 a {
+        padding-right: 0px !important;
+    }
+    .logo-2 a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .logo-3 a {
+        padding-right: 18px;
+    }
+    .scroll-block {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 5%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 68%;
+        top: 110px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 41px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -36px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 68%;
+        height: 100px;
+        margin-top: 36px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 31px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 90px;
+        line-height: 110px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 40px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 500px;
+        left: 70px;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        /* padding: 150px 0; */
+        padding-top: 170px;
+        padding-bottom: 160px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 160px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 340px;
+        top: 32px;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 43px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    /* .footer-img-block img {
+        width: 100%;
+        max-width: 36%;
+    } */
+    img.footrt-logo-two {
+        max-width: 40%;
+    }
+    img.footrt-logo-one {
+        max-width: 50%;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+    .row {
+        --bs-gutter-x: 0px !important;
+    }
+    .right-image-one {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+    .logo-1 a {
+        padding-right: 40px !important;
+    }
+    .logo-2 a {
+        padding-left: 13.5px !important;
+        padding-right: 50px !important;
+    }
+    .scroll-block {
+        padding-left: 12.5px !important;
+        padding-right: 0px !important;
+    }
+    .col.p-0.logo-4 {
+        margin-left: 13px;
+    }
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 60px;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 63%;
+        top: 98px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 41px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -36px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 70%;
+        height: 100px;
+        margin-top: 36px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    .logo-section .col {
+        width: 100%;
+        max-width: 22%;
+    }
+
+    img.right-logo-two {
+        width: 54%;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        color: #DF5928;
+        line-height: 49px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 90px;
+        line-height: 100px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 400px;
+        top: 30px;
+        left: 75px;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        /* padding: 350px 0; */
+        padding-top: 140px;
+        padding-bottom: 150px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 140px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 960px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 123px;
+        top: 29px;
+    }
+
+    .row.logo-text {
+        padding-top: 262.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 57px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    /* .footer-img-block img {
+        width: 100%;
+        max-width: 40%;
+    } */
+    img.footrt-logo-two {
+        max-width: 40%;
+    }
+    img.footrt-logo-one {
+        max-width: 50%;
+    }
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+    .logo-1 a {
+        padding-right: 0px !important;
+    }
+    .logo-2 a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .logo-3 a {
+        padding-right: 0px;
+    }
+    .scroll-block {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 992px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 5%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 63%;
+        top: 67px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 54px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 60px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: -36px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18;
+        line-height: 18px;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 70%;
+        height: 100px;
+        margin-top: 36px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        color: #DF5928;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 60px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 90px;
+        line-height: 100px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 45% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 25px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 400px;
+        top: 30px;
+        left: 54px;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    .logo-section {
+        padding: 36px 36px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+       padding-top: 100px;
+       padding-bottom: 150px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 81% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 140px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 103px;
+        top: 26px;
+    }
+
+    .row.logo-text {
+        padding-top: 185.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 40px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .footer-img-block img {
+        width: 100%;
+        max-width: 45%;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+    .right-image-one {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* input[type="checkbox"] {
+            position: relative;
+            right: 48%;
+        } */
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+    .right-image-one {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .row {
+        --bs-gutter-x: 0px !important;
+    }
+    .logo-1 a {
+        padding-right: 46.5px !important;
+    }
+    .logo-2 a {
+        padding-left: 0px !important;
+        padding-right: 0px  !important;
+    }
+    .logo-3 a {
+        padding-right: 46.5px;
+    }
+    .footer-after-sec {
+        position: relative;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+        .footer-after-sec:before {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            top: -74px;
+            left: 5%;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+        .footer-after-sec::after {
+            content: '';
+            background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 360px;
+            background-repeat: no-repeat;
+            background-size: 240px;
+            height: 50px;
+            color: #fff;
+        }
+
+    .footer-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.engg-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 52%;
+        top: 117px;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        position: relative;
+        left: 31px;
+    }
+
+    section.hero-section:before {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+        position: relative;
+        left: 39px;
+        top: 180px;
+    }
+
+    section.hero-section:after {
+        content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1637.png');
+        position: absolute;
+        right: 52px;
+        left: auto;
+        top: 215px;
+    }
+
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        align-items: flex-end !important;
+    }
+
+    button.navbar-toggler {
+        display: none;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        left: auto;
+        right: -25px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 18px;
+        line-height: 1;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 96%;
+
+    }
+
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+
+    .divider:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        left: 73%;
+        height: 100px;
+        margin-top: 36px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 24px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    h3.get-in-tiuch-desk-btn {
+        display: none;
+    }
+
+    .desktop-none {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: left;
+    }
+
+    /* ul.list li:first-child {
+                font-family: 'poppins';
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                color: #DF5928;
+            } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 33px;
+        color: #fff;
+        margin-bottom: 20.6px;
+    }
+
+    /* contact */
+    .contact-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #143156;
+        margin-top: 27.1px;
+        margin-bottom: 24.2px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #3C3C3C;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        line-height: 106px;
+        font-weight: 400;
+        color: #3C3C3C;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 33px;
+        color: #DF5928;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin: 40px 32px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 90px;
+        line-height: 100px;
+        text-align: left;
+        color: #DF5928;
+        width: auto;
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Desktop-banner.png');
+        background-repeat: no-repeat;
+        background-position: 45% 100%;
+        background-size: cover;
+
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        width: 350px;
+        top: 39px;
+        left: 40px;
+    }
+
+    .logo-section {
+        padding: 36px 121px;
+        background-color: #F8F8F8;
+    }
+
+    .footer-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1681.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/product-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .engg-section .container {
+        padding-top: 170px;
+        padding-bottom: 100px;
+    }
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 14.5px 0 16.5px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        padding: 25.5px 0 119.5px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 21px;
+        padding-left: 29px;
+    }
+
+    input {
+        padding: 14.5px 0px 16.5px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #00115A;
+        padding-left: 29px;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #fff;
+        max-width: 79% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 120px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: auto;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    span.banner-desc {
+        font-size: 13px;
+        line-height: 28px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        /* right: 15px; */
+        right: -9px;
+        top: 35px;
+        width: 300px;
+    }
+
+    .row.logo-text {
+        padding-top: 123.5px;
+        padding-bottom: 43.9px;
+        align-items: center;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 224px;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        position: absolute;
+        left: 50px;
+        margin-top: -4px;
+        font-size: 24px;
+        color: #DF5928;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    img.right-logo-two {
+        width: 50%;
+    }
+
+    img.right-logo-one {
+        width: 100%;
+    }
+
+    .col img {
+        margin-bottom: 20px;
+    }
+
+    h3.get-in-tiuch-mobile-btn {
+        display: none;
+    }
+
+    .scroll-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* input[type="checkbox"] {
+            position: relative;
+            right: 47%;
+        } */
+        section.engg-section:before{
+            display: none;
+        }
+    .row.banner-text-block {
+        position: relative;
+    }
+
+    i.fa.fa-linkedin-square {
+        display: none;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #fff;
+        text-align: left;
+        margin-left: 43px;
+        margin-top: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    ul.navbar-nav a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    .row.banner-text-block:before {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        /* height: 100%; */
+        position: absolute;
+        top: 85px;
+        left: 44px;
+        width: 171px;
+        background-repeat: no-repeat;
+        /* max-width: 140px; */
+        background-size: 171px;
+        height: 35px;
+    }
+
+    .row.engg-sec-block {
+        position: relative;
+    }
+
+    .row.engg-sec-block:before {
+        content: '';
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png);
+        height: 100%;
+        position: absolute;
+        top: 79px;
+        left: 19px;
+        /* left: 28px; */
+        width: 100%;
+        background-repeat: no-repeat;
+        /* max-width: 300px; */
+        background-size: 171px;
+        height: 35px;
+    }
+
+    .fixed-bottom,
+    .fixed-top {
+        left: 0;
+        position: absolute !important;
+        right: 0;
+        z-index: 1030;
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        align-items: flex-end !important;
+    }
+
+    button.navbar-toggler {
+        display: none;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        left: auto;
+        right: -10px;
+    }
+
+    select.wpcf7-form-control {
+        font-size: 12px;
+        line-height: 1;
+        background: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png') no-repeat right;
+        -webkit-appearance: none;
+        background-position-x: 99%;
+
+    }
+
+    .col-sm-12.accep.desktop-none {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 8px;
+        line-height: 15px;
+        font-weight: 500;
+        text-align: left;
+        /* margin-left: 19px; */
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+
+    .col-sm-12.accep.desktop-none a {
+        color: #1A1818;
+    }
+
+    .logo-mobile-sect {
+        padding: 33.8px 0px 47px 0px;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/four-logo-bg.svg');
+        background-size: cover;
+        background-position: center center;
+        height: 356px;
+    }
+
+    span.wpcf7-list-item-label a {
+        color: #1A1818;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 7.1px 0px 6.6px 0px;
+    }
+
+    span.wpcf7-list-item {
+        font-family: 'Poppins', sans-serif;
+        color: #1A1818;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 39px;
+        margin-bottom: 16px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .page-id-9 div#wrapper {
+        display: none;
+    }
+
+    .product-img-block img {
+        width: 100%;
+    }
+
+    .engg-img-block img {
+        width: 100%;
+    }
+
+    h3.mobile-btn {
+        font-family: 'Poppins, sans-serif';
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #DF5928;
+        margin-top: 13.4px;
+        margin-bottom: 12px;
+    }
+
+    img.footrt-logo-one {
+        width: 80%;
+        margin-bottom: 29.8px;
+    }
+
+    img.footrt-logo-two {
+        width: 45%;
+        margin-right: -16px;
+    }
+
+    /* footer */
+    ul.list li a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ul.list li {
+        list-style: none;
+        text-align: center;
+    }
+
+    /* ul.list li:first-child {
+            font-family: 'poppins';
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #DF5928;
+        } */
+
+    .footer-text p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 29.8px;
+        color: #fff;
+        margin-bottom: 6.2px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    /* contact */
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #3C3C3C;
+        margin-bottom: 8.5px;
+    }
+
+    .contact-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #3C3C3C;
+        margin-bottom: 8.5px;
+    }
+
+    /* engg */
+    .engg-img-block img {
+        width: 100%;
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-167811.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .mobiletext-sec {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/text-bg.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .mobiletext-sec .hero-left-text-block p {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .mobiletext-sec .hero-left-text-block {
+        padding: 18.2px 0px 25.2px 0px;
+    }
+
+    /* .engg-block p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #fff;
+        } */
+    .engg-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    /* product */
+    .product-title-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        /* line-height: 106px; */
+        font-weight: 400;
+        color: #3C3C3C;
+        margin-top: 9.5px;
+    }
+
+    .product-title-block h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #DF5928;
+        line-height: 22px;
+        font-weight: bold;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .product-img-block img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    /* MOUSE SCROLL ANIMATION */
+
+    .mouseDown {
+        font-size: 0.9em;
+        /* CONTROL MOUSE SIZE */
+        border: 2px solid #DF5928;
+        display: block;
+        width: 1.7em;
+        height: 2.8em;
+        border-radius: 0.9em;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: border 0.2s ease-out;
+    }
+
+    .mouseDown:hover {
+        border: 3px solid #DF5928;
+    }
+
+    .mouseDown span {
+        display: block;
+        background: #DF5928;
+        width: 0.2em;
+        height: 0.3em;
+        margin: 0.7em auto 0;
+        border-radius: 0.4em;
+    }
+
+    .mouseDown span {
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
+
+    .mouseDown:hover span {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+    }
+
+    @-webkit-keyframes scroll {
+
+        0%,
+        20% {
+            -webkit-transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(1.2em) scaleY(1.5);
+            opacity: 0.01;
+        }
+    }
+
+
+    /* hero section */
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.p-md-3 {
+        border-bottom: 0.5px solid #fff;
+        margin-top: -4px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .banner-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 51px;
+        line-height: 48px;
+        text-align: center;
+        color: #DF5928;
+        width: auto;
+
+    }
+
+    span.orange-text {
+        display: block;
+        color: #fff;
+    }
+
+    span.orangr-title {
+        color: #DF5928;
+    }
+
+    .banner-title p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    li.nav-item a {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .hero-section {
+        width: 100%;
+        background-image: url(https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/hero-bg-svg.svg);
+        background-repeat: no-repeat;
+        background-position: 55% 100%;
+        background-size: cover;
+    }
+
+    span.white-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+
+    }
+
+    .row.engg-sec-block {
+        column-gap: 0px;
+    }
+
+    .hero-left-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        font-style: italic;
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        margin-bottom: 17px;
+        margin-left: 29px;
+        margin-right: 24px;
+        text-align: center !important;
+    }
+
+    .logo-section {
+        padding: 36px 0px 36px 0px;
+        background-color: #F8F8F8;
+    }
+
+    section.logo-section img {
+        width: 100%;
+    }
+
+    /* .logo-section{
+            background-image: url('');
+        } */
+    /* .footer-section{
+            background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1677.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 150px 0px 40.6px 0px;
+        } */
+    .footer-section {
+        background-image: url("https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1677.png");
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 87.3px 0px 40.6px;
+    }
+
+    .product-section {
+        background-color: #fff;
+    }
+
+    .engg-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1676-2.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+    }
+
+    .row.logo-sec {
+        margin-right: 54px;
+        margin-left: 50px;
+        margin-top: 54px;
+    }
+
+    /* .engg-section .container {
+            padding: 127.2px 0px 0px 0px;
+        } */
+
+    /* contact-form */
+    .contact-sec-chcekbox1,
+    .contact-sec-chcekbox2 {
+        padding: 7.1px 0 6.6px 0;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #00115A;
+        padding-left: 7.8px;
+        margin-bottom: 8.4px;
+    }
+
+    li.footer-title a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        line-height: 40px !important;
+        color: #DF5928 !important;
+    }
+
+    .contact-sec-msg-one {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 7.8px 0 0px 0;
+        color: #00115A;
+        border: 3px solid #E6E6E6;
+        margin-top: 8.4px;
+        padding-left: 7.8;
+    }
+
+    .banner-title h1 {
+        font-family: Poppins, sans-serif;
+        font-size: 51px !important;
+        line-height: 48px !important;
+        text-align: left;
+        color: rgb(223, 89, 40);
+        width: auto;
+    }
+
+    .row.banner-text-block {
+        padding-left: 41px;
+        padding-right: 36px;
+    }
+
+    input {
+        padding: 7.1px 0px 6.6px 0px;
+        margin-bottom: 21px;
+        border: 3px solid #E6E6E6;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px !important;
+        font-weight: 500;
+        line-height: 18px !important;
+        color: #00115A;
+        padding-left: 7.8px;
+        margin-bottom: 8.4px !important;
+    }
+
+    input.wpcf7-form-control.has-spinner.wpcf7-submit {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px !important;
+        font-weight: 500;
+        line-height: 18px !important;
+        color: #fff;
+        max-width: 92% !important;
+        background-color: #DF5928;
+        border-color: #DF5928;
+        text-transform: uppercase;
+    }
+
+    .bg-block {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1678-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 366px;
+    }
+
+    .bg-block-mobile {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/mobile-bg1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 366px;
+    }
+
+    .hero-sec-bg .left-text-right-logo-bg-block {
+        position: relative;
+    }
+
+    .banner-text-block p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .hero-bg-block .container {
+        width: 100%;
+        max-width: 1367px;
+    }
+
+    .col.p-0 {
+        position: relative;
+    }
+
+    .logo-section {
+        padding: 33.8px 0px 47px 0px;
+        background-color: #F8F8F8;
+        margin-top: -1px;
+    }
+
+    span.banner-desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: #fff;
+        /* width: 100%; */
+        position: absolute;
+        right: 350px;
+        top: 53px;
+        margin-bottom: 91.1px;
+    }
+
+    .row.logo-text {
+        /* padding-top: 91.1px; */
+        padding-bottom: 26.5px;
+        margin: 0;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        padding-top: 148.5;
+    }
+
+    .hero-left-text-block p {
+        text-align: left;
+    }
+
+    .footer-text i.fa.fa-linkedin-square {
+        /* position: absolute; */
+        /* left: 50px; */
+        /* margin-top: -4px; */
+        font-size: 30px;
+        color: #DF5928;
+        padding-bottom: 32.6px;
+    }
+
+    .contact-form-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/white-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .white-divider {
+        color: #fff;
+        width: 100%;
+        width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.list li a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    img.right-logo-one {
+        width: 50%;
+        margin-bottom: 28.3px;
+        /* margin-top: 260px; */
+    }
+
+    img.right-logo-two {
+        width: 30%;
+    }
+
+    .col img {
+        margin-bottom: 0px;
+    }
+
+    .engg-sec-block .col.p-0 {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .mouseDown {
+        display: none;
+    }
+
+    .logo-section .col {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .scroll-block {
+        display: none;
+    }
+
+    span.banner-desc {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        right: 50px;
+        top: 114px;
+        text-align: left;
+    }
+
+    /* h3.get-in-tiuch-mobile-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #DF5928;
+    margin-top: 33.7px;
+    margin-bottom: 4px;
+    } */
+    .mobile-none {
+        display: none;
+    }
+
+    .desktop-none {
+        display: block;
+    }
+
+    .row.engg-sec-block {
+        column-gap: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        /* padding-top: 127.2px; */
+        padding-top: 140px;
+    }
+
+    ::placeholder {
+        color: #00115A;
+    }
+
+    .bg-block-mobile {
+        background-image: url("https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/mobile-bg1.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 89px;
+    }
+
+    ul {
+        padding-left: 0px !important;
+    }
+
+    h3.m-btn {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #DF5928;
+        margin-top: 37.3px;
+        margin-bottom: 4.5px;
+    }
+
+    .logo1 img {
+        margin-bottom: 33px;
+    }
+
+    .logo2 img {
+        margin-bottom: 33px;
+    }
+
+    span.banner-desc {
+        display: none;
+    }
+
+    p.banner-pra-mobile {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        text-align: left;
+    }
+
+    .banner-title.heacontent.text-center {
+        width: 100%;
+        max-width: 1367px;
+        /* padding-top: 122px; */
+    }
+
+    .mobile-footer {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/footer-bg.svg');
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .row.mobile-footer-block {
+        /* padding: 87.3px 0px 40.6px; */
+        padding: 36.3px 0px 40.6px;
+    }
+	
+}
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+	.row.logo-text {
+		display: block;
+		text-align: right;
+	}
+	.row.logo-text .col-md-3 {
+		display: inline-block;
+		width: 25%;
+		text-align: right;
+	}
+	.row.logo-text .col-md-3 img {
+		margin: 80px 0 0;
+		height: 33px;
+		width: auto;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:480px) {
+
+    /* html{
+            overflow-x: hidden !important;
+        } */
+    section.hero-section.mobile-hero-section {
+        background-image: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1679-svg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo-section {
+        padding: 22.8px 0px 47px 0px;
+        background-color: #F8F8F8;
+        margin-top: -2px;
+        margin-bottom: -44px;
+    }
+
+    /* section.hero-section:before {
+            content: url('https://wordpress-426808-3202639.cloudwaysapps.com/wp-content/uploads/2023/01/Group-1636.png');
+            position: fixed;
+            left: 39px;
+            top: 180px;
+        } */
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        align-items: flex-end !important;
+    }
+
+    button.navbar-toggler {
+        display: none;
+    }
+
+    a.nav-link.text-white {
+        position: relative;
+        left: auto;
+        right: -10px;
+    }
+
+    span.banner-desc {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        right: 50px;
+        top: 114px;
+        text-align: left;
+    }
+
+    .row.banner-text-block {
+        padding-left: 41px;
+        padding-right: 36px;
+        padding-top: 135px;
+        padding-bottom: 91px;
+    }
+
+
+    p.banner-pra-mobile {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: Poppins;
+        text-align: left;
+        margin: 0;
+    }
+
+    .row.banner-text-block {
+        padding: 135px 36px 91px 41px;
+    }
+
+    .banner-title.heacontent.text-center {
+        padding: 0px;
+    }
+
+    img.right-logo-one {
+        width: 252px;
+        margin-bottom: 28.3px;
+        margin-top: 47px;
+        text-align: right;
+        padding-right: 32px;
+        max-width: 100%;
+    }
+
+    img.right-logo-two {
+        width: 70%;
+        max-width: 100%;
+        text-align: right;
+        padding-right: 75px;
+        margin-right: -44px;
+    }
+	
+    .right-logo-block {
+        padding-left: 103px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .footer-img-block img {
+        max-width: 100%;
+    }
+}
